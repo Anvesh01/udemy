@@ -6,4 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  loadedFeature:string=""
+  onfeatureSelected(feature:string){
+    if(feature =="recipe"){
+     this.loadedFeature="recipe"
+    }
+    else{
+      this.loadedFeature="shopping"
+    }
+  }
 }
